@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+		<ServerGarbageCollection>True</ServerGarbageCollection>
+		<RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+		<TargetLatestRuntimePatch>False</TargetLatestRuntimePatch>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.3.644" />
+		<PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="3.3.644" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BTS.BtsOne.Stateful.Data.Remoting\BTS.BtsOne.Stateful.Data.Remoting.csproj" />
+	</ItemGroup>
+
+</Project>
